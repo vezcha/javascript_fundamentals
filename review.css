@@ -1,0 +1,27 @@
+.intro{} //selects all elements with class name
+#firstname{} //selects all elements with id name
+
+*{} // selects all elements
+
+p{} //selects all <p> elements
+
+div, p{} //selects all <p> elements and <div> elements
+
+div p{} //selects all <p> inside of <div> elements
+
+div > p{} //selects all <p> elements where the parent is a <div>
+
+div + p{} //selects all <p> elements that are placed immediately after div elements
+
+p ~ ul{} //<ul> elements that are preceded by a <p> element
+
+[target]{} //all elements with target attribute
+
+[title ~= flower][] // selects all elements with a title attirubte containing the word "flower"
+
+p:first-child{} //selects all p elements that are the first child of their parents
+
+:not(p){} //selects every element that is not a <p>
+
+p:nth-child(2) // selects every <p> element that is the 2nd child of its parent
+

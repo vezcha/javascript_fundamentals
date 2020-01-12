@@ -1,0 +1,29 @@
+<script>
+
+function Player(){
+	this.name;
+	this.hitpoints = 100;
+	
+	
+	
+	this.attack = function attack(opponent){
+		opponent.htpoints -= 10;
+		alert(this.name+" just hit "+opponent.name);
+	}
+}
+
+var p1 = new Player();
+var p2 = new Player();
+
+p1.name = "Conan";
+p2.name = "Hercules";
+
+p1.attack(p2);
+p2.name" has " + p2.hitpoints+" hit points left");
+
+Player.prototype.heal = function heal(targetPlayer){
+	targetPlayer.hitpoints += 5;
+}
+Player.prototype.energy = 200;
+p1.heal(p2);
+</script>

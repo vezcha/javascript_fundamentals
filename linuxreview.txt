@@ -1,0 +1,11 @@
+cd - change directory
+cp - copy file
+mv - move file
+rm - remove file
+ls - list the current directory
+mkdir - create director
+chmod - changes file permissions
+grep - search files for regex
+nano - text editor
+cat - concatenate, viewing text files
+tail - outputs the last part of file

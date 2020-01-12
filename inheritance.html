@@ -1,0 +1,30 @@
+<script>
+function ParentClass(){
+	this.message = "Hello!"
+	this.method = function(arg1){
+		return "Here is my method arg "+arg1;
+	}
+}
+
+function ChildClass(){
+	this.yell("HELLO!");
+	this.add = function(arg1, arg2){
+		return (arg1+arg2);
+	}
+}
+
+
+ChildClass.prototype = new ParentClass();
+
+var instance1 = new ChildClass();
+
+//instance1 is an instance of both classes
+
+
+
+
+//override
+ChildClass.prototype.message = "Overridden hello";
+alert(instance1.message);
+
+</script>
